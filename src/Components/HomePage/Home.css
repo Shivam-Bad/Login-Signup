@@ -1,0 +1,147 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo {
+    height: 60px;
+    width: 180px;
+    background-image: url('../assets/Chat2.png'); /* Adjust the path if necessary */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+  .navbar-search input {
+    width: 300px;
+    padding: 10px 40px 10px 10px; /* Add padding on the right for the icon */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .navbar-search input:hover {
+    border-color: #007bff; /* Violet border on hover */
+  }
+  .navbar-search input:focus {
+    outline: none;
+    border-color:#007bff;
+  }
+  .navbar-search {
+    position: relative; /* Allows positioning of the icon relative to the input field */
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-search .search-icon {
+    position: absolute;
+    left: 15px; /* Adjust spacing from the right edge of the input */
+    font-size: 16px;
+    color: #888;
+    pointer-events: none; /* Prevent interaction with the icon */
+  }
+
+  .navbar-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    height: 40px;
+    width: 40px;
+    background-image: url('../assets/Chat2.png'); /* Adjust the path if necessary */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .language {
+    font-size: 16px;
+    color: #333;
+    margin-left: 30px;
+    padding-right: 20px;
+  }
+ 
+/* Jumbotron for Menu Section */
+.navbar-jumbotron {
+  background-color: #fff; /* White background for the jumbotron */
+  padding: 10px 20px; /* Reduced padding to make it smaller */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  width: 5%; /* Full width */
+  max-width: 300px; /* Limit width to better fit icons */
+  margin-top: 150px; /* Center the jumbotron with reduced margin */
+  height: auto; /* Allow the height to adjust based on the content */
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  margin-left: 30px;
+  padding-bottom: 10px; /* Additional padding adjustment for a compact look */
+}
+
+/* The existing menu styles (will apply to the links inside this jumbotron) */
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adjust space between icons */
+  width: 100%; /* Ensure it spans the full width of the jumbotron */
+  padding: 0; /* Remove padding for the menu itself */
+}
+
+/* Menu Container */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between each link */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Menu Link Style */
+.menu-container a {
+  color: #0d6efd; /* Default link color */
+  text-decoration: none;
+  font-size: 24px; /* Icon size */
+  position: relative;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Menu Item Hover Effect */
+.menu-container a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Underline Effect on Hover */
+.menu-container a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px; /* Adjust underline position */
+  height: 2px; /* Underline thickness */
+  background-color: red; /* Underline color */
+}
+
+/* Active/Focused Link Style (Optional) */
+.menu-container a:active,
+.menu-container a:focus {
+  color: #28a745; /* Active/Focused link color */
+}
+
+/* Icon Padding (optional) */
+.menu-container a {
+  padding: 6px; /* Add some space around the icons */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Optional: Add a subtle shadow to the icons on hover */
+.menu-container a:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow on hover */
+}

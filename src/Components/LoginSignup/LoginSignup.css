@@ -1,0 +1,184 @@
+  /* Main Container */
+.signup-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left Section */
+.signup-left {
+  flex: 1;
+  background: url("../assets/login.png") no-repeat center center/cover;
+  position: relative;
+}
+
+.signup-left .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.logo {
+  width: 500px;
+  height: 200px;
+  background: url("../assets/Chat.png") no-repeat center center/cover;
+  
+}
+
+.signup-left .subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.signup-left .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.signup-left .icon {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-left .icon:hover {
+  color: #ccc;
+}
+
+/* Right Section */
+.signup-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: sans-Serif;
+}
+
+.form-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.form-group input:hover {
+  border-color: #7203f6; /* Violet border on hover */
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;  
+  margin-top: 1rem;
+  
+}
+.btn {
+  width: 35%;
+  padding: 10px;
+  background: linear-gradient(to right, #7203f6, #ac67fd); /* Gradient */
+  color: #fff;
+  border: none;
+  border-radius: 15px; /* Rounded corners */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: linear-gradient(to right,#7203f6); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.login-link {
+  display: flex;
+justify-content: space-around;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #7203f6;
+  text-decoration: none;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1.5rem 0; /* Adjusts spacing before and after */
+}
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #666;
+}
+
+.input-with-icon input {
+  padding-left: 35px; /* Adjust padding to accommodate icon */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Align button to the right */
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
